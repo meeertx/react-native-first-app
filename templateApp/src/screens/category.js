@@ -202,7 +202,10 @@ const styles = StyleSheet.create({
   },
   categoryarrow: {
     position: "absolute",
-    right: 20,
+    left: 280,
+    top:30,
+    width:80,
+    height:80
   },
   back: {
     position: "absolute",

@@ -22,11 +22,10 @@ import Detail from "../screens/settings/cards/card_detail1";
 import Detail2 from "../screens/settings/cards/card_detail2";
 import Detail3 from "../screens/settings/cards/card_detail3";
 import Detail4 from "../screens/settings/cards/card_detail4";
+import AddCard from '../screens/settings/cards/add_card';
 import About from "../screens/settings/about/about";
 import Rate from "../screens/settings/rateus/rate";
 import Write from "../screens/settings/writeus/writeus";
-
-
 
 const Stack = createStackNavigator();
 
@@ -252,6 +251,20 @@ const Routes = () => {
           }}
         />
         <Stack.Screen
+          name="AddCard"
+          component={AddCard}
+          options={{
+            headerShown: false,
+            headerStyle: {
+              backgroundColor: "#20C3AF",
+            },
+            headerTintColor: "white",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
           name="About"
           component={About}
           options={{
@@ -293,7 +306,6 @@ const Routes = () => {
             },
           }}
         />
-       
       </Stack.Navigator>
     </NavigationContainer>
   );
